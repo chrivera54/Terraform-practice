@@ -1,9 +1,3 @@
-resource "aws_instance" "app_server" {
-  ami           = "ami-0cf10cdf9fcd62d37"
-  instance_type = "t2.micro"
-  subnet_id = aws_subnet.public_subnet_1.id
-
-  tags = {
-    Name = "ExampleAppServerInstance"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfe4d60e951de48bb8ef052d0eeaa80a554d6225962fabdecf87680d4160f6a7
+size 219
