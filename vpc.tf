@@ -5,15 +5,15 @@ resource "aws_vpc" "my_vpc_terraform" {
 
 # Crear subredes públicas
 resource "aws_subnet" "public_subnet_1" {
-  vpc_id                  = aws_vpc.my_vpc_terraform.id
-  cidr_block              = "10.0.0.0/25" # Cambia esto a tu rango de direcciones IP CIDR preferido
-  availability_zone       = "us-east-1a" # Cambia esto a tu zona de disponibilidad preferida
+  vpc_id            = aws_vpc.my_vpc_terraform.id
+  cidr_block        = "10.0.0.0/25" # Cambia esto a tu rango de direcciones IP CIDR preferido
+  availability_zone = "us-east-1a"  # Cambia esto a tu zona de disponibilidad preferida
 }
 
 resource "aws_subnet" "public_subnet_2" {
-  vpc_id                  = aws_vpc.my_vpc_terraform.id
-  cidr_block              = "10.0.0.128/25" # Cambia esto a tu rango de direcciones IP CIDR preferido
-  availability_zone       = "us-east-1b" # Cambia esto a tu zona de disponibilidad preferida
+  vpc_id            = aws_vpc.my_vpc_terraform.id
+  cidr_block        = "10.0.0.128/25" # Cambia esto a tu rango de direcciones IP CIDR preferido
+  availability_zone = "us-east-1b"    # Cambia esto a tu zona de disponibilidad preferida
 }
 
 # Crear Internet Gateway
