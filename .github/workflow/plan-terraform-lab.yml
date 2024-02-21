@@ -12,9 +12,9 @@ jobs:
 
 #Se crean los steps#
   steps:
-    uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
   #Ahora si vamos a correr los comandos de terraform (run)#
     name: plan-terraform-AWS-infra
-    run: terraform plan
+    - run: terraform plan
 
