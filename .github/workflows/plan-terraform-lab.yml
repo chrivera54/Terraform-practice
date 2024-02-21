@@ -1,14 +1,13 @@
 name: Terraform Plan Deployment AWS infrastructure
 
-on:
-  pull_request:
+on: [pull_request]
 
 #Se van a crear los Jobs#
 
 jobs:
 
   plan:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
 #Se crean los steps#
   steps:
